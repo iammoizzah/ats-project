@@ -17,8 +17,13 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Routes
+// All Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/branches', require('./routes/branchRoutes'));
+app.use('/api/jobs', require('./routes/jobRoutes'));
+app.use('/api/applications', require('./routes/applicationRoutes'));
+app.use('/api/interviews', require('./routes/interviewRoutes'));
+app.use('/api/upload', require('./routes/uploadRoutes'));
 
 app.get('/', (req, res) => {
   res.send('ATS API is running...');
