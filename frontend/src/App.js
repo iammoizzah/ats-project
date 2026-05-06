@@ -1,3 +1,4 @@
+import Interviews from './pages/hr/Interviews';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,15 +7,21 @@ import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
 
-// Public Pages
+// Public
 import Home from './pages/public/Home';
+import Jobs from './pages/public/Jobs';
+import JobDetail from './pages/public/JobDetail';
+
+// Auth
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 
-// Candidate Pages
+// Candidate
 import CandidateDashboard from './pages/candidate/CandidateDashboard';
+import MyApplications from './pages/candidate/MyApplications';
+import MyInterviews from './pages/candidate/MyInterviews';
 
-// HR Pages
+// HR
 import HRDashboard from './pages/hr/HRDashboard';
 
 function App() {
@@ -23,37 +30,44 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          {/* Public Routes */}
+          {/* Public */}
           <Route path="/" element={<Home />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/jobs/:id" element={<JobDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          {/* Candidate Routes */}
-          <Route
-            path="/candidate/dashboard"
-            element={
-              <ProtectedRoute roles={['candidate']}>
-                <CandidateDashboard />
-              </ProtectedRoute>
-            }
-          />
+          {/* Candidate */}
+          <Route path="/candidate/dashboard" element={
+            <ProtectedRoute roles={['candidate']}>
+              <CandidateDashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/candidate/applications" element={
+            <ProtectedRoute roles={['candidate']}>
+              <MyApplications />
+            </ProtectedRoute>
+          } />
+          <Route path="/candidate/interviews" element={
+            <ProtectedRoute roles={['candidate']}>
+              <MyInterviews />
+            </ProtectedRoute>
+          } />
+          <Route path="/hr/interviews" element={
+  <ProtectedRoute roles={['hr', 'admin']}>
+    <Interviews />
+  </ProtectedRoute>
+} />
 
-          {/* HR Routes */}
-          <Route
-            path="/hr/dashboard"
-            element={
-              <ProtectedRoute roles={['hr', 'admin']}>
-                <HRDashboard />
-              </ProtectedRoute>
-            }
-          />
+          {/* HR */}
+          <Route path="/hr/dashboard" element={
+            <ProtectedRoute roles={['hr', 'admin']}>
+              <HRDashboard />
+            </ProtectedRoute>
+          } />
         </Routes>
 
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-        />
+        <ToastContainer position="top-right" autoClose={3000} />
       </BrowserRouter>
     </AuthProvider>
   );
