@@ -1,12 +1,17 @@
-# ats-project
-Multi-Branch Recruitment & Applicant Tracking System
 # Multi-Branch Recruitment & Applicant Tracking System
 
-A full-stack MERN web application for managing recruitment across multiple branches.
+A full-stack MERN web application for managing recruitment
+across multiple branches.
+
+## Live Demo
+
+- Frontend: https://ats-project-orpin.vercel.app/
+- Backend API: https://ats-project-j58f.onrender.com/api
 
 ## Tech Stack
-- Frontend: React.js
-- Backend: Node.js + Express.js
+
+- Frontend: React.js (Vercel)
+- Backend: Node.js + Express.js (Render)
 - Database: MongoDB Atlas
 - File Storage: Cloudinary
 - Email: Gmail SMTP (Nodemailer)
@@ -14,20 +19,14 @@ A full-stack MERN web application for managing recruitment across multiple branc
 ## Setup Instructions
 
 ### Backend
+
 cd backend
 npm install
-cp .env.example .env   # fill in your credentials
+cp .env.example .env
 npm run dev
 
 ### Frontend
+
 cd frontend
 npm install
 npm start
-
-## Live Demo
-[Link will be added after deployment]
-
-## Team Members
-- Member 1 — GitHub: @username
-- Member 2 — GitHub: @username
-- Member 3 — GitHub: @username
