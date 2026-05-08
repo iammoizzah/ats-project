@@ -23,12 +23,18 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (name, email, password, role) => {
-    const { data } = await API.post('/auth/register', {
-      name, email, password, role
-    });
-    localStorage.setItem('userInfo', JSON.stringify(data));
-    setUser(data);
-    return data;
+    try {
+      const { data } = await API.post('/auth/register', {
+        name, email, password, role
+      });
+      console.log('Registration successful:', data);
+      localStorage.setItem('userInfo', JSON.stringify(data));
+      setUser(data);
+      return data;
+    } catch (error) {
+      console.error('Registration error:', error.response?.data || error.message);
+      throw error;
+    }
   };
 
   const logout = () => {

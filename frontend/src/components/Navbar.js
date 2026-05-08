@@ -13,10 +13,11 @@ const Navbar = () => {
   return (
     <nav style={styles.nav}>
       <Link to="/" style={styles.brand}>
-        🏢 ATS Portal
+         ATS Portal
       </Link>
 
       <div style={styles.links}>
+        <Link to="/" style={styles.link}>Home</Link>
         <Link to="/jobs" style={styles.link}>Jobs</Link>
 
         {!user ? (

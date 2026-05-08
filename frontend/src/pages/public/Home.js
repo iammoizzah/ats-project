@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <div style={styles.hero}>
         <h1 style={styles.heroTitle}>
-          Find Your Dream Job 🚀
+          Find Your Dream Job 
         </h1>
         <p style={styles.heroSubtitle}>
           Multi-branch recruitment platform connecting top talent
