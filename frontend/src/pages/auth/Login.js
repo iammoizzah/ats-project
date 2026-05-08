@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h2 style={styles.title}>Welcome Back 👋</h2>
+        <h2 style={styles.title}>Welcome Back </h2>
         <p style={styles.subtitle}>Login to your ATS account</p>
 
         <form onSubmit={handleSubmit}>

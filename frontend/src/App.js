@@ -1,5 +1,5 @@
 import Interviews from './pages/hr/Interviews';
-import Profile from './pages/candidate/profile';
+import Profile from './pages/candidate/Profile';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
