@@ -1,4 +1,5 @@
 import Interviews from './pages/hr/Interviews';
+import Profile from './pages/candidate/Profile';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -43,6 +44,11 @@ function App() {
               <CandidateDashboard />
             </ProtectedRoute>
           } />
+          <Route path="/candidate/profile" element={
+  <ProtectedRoute roles={['candidate']}>
+    <Profile />
+  </ProtectedRoute>
+} />
           <Route path="/candidate/applications" element={
             <ProtectedRoute roles={['candidate']}>
               <MyApplications />
