@@ -152,7 +152,7 @@ const Applicants = () => {
                       rel="noreferrer"
                       style={styles.fileLink}
                     >
-                      📄 View Resume
+                       View Resume
                     </a>
                   )}
                   {app.coverLetterUrl && (
@@ -162,7 +162,7 @@ const Applicants = () => {
                       rel="noreferrer"
                       style={styles.fileLink}
                     >
-                      📝 Cover Letter
+                       Cover Letter
                     </a>
                   )}
                 </div>
@@ -201,7 +201,7 @@ const Applicants = () => {
 
                 {/* Email Action Buttons */}
                 <div style={styles.emailRow}>
-                  <span style={styles.emailLabel}>📧 Send Email:</span>
+                  <span style={styles.emailLabel}> Send Email:</span>
                   <button
                     style={styles.emailBtn}
                     onClick={() => handleEmail('shortlist', app._id, app.candidate)}

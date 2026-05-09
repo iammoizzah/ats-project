@@ -49,7 +49,7 @@ const MyApplications = () => {
 
       {applications.length === 0 ? (
         <div style={styles.empty}>
-          <p style={styles.emptyText}>📋 No applications yet.</p>
+          <p style={styles.emptyText}> No applications yet.</p>
           <a href="/jobs" style={styles.browseLink}>Browse Jobs →</a>
         </div>
       ) : (
@@ -70,7 +70,7 @@ const MyApplications = () => {
                     </h2>
                     <p style={styles.department}>{app.job?.department}</p>
                     <p style={styles.branch}>
-                      🏢 {app.job?.branch?.name || 'N/A'} • Applied{' '}
+                       {app.job?.branch?.name || 'N/A'} • Applied{' '}
                       {new Date(app.createdAt).toLocaleDateString()}
                     </p>
                   </div>
@@ -114,7 +114,7 @@ const MyApplications = () => {
                       rel="noreferrer"
                       style={styles.fileLink}
                     >
-                      📄 View Resume
+                       View Resume
                     </a>
                   )}
                   {app.coverLetterUrl && (
@@ -124,7 +124,7 @@ const MyApplications = () => {
                       rel="noreferrer"
                       style={styles.fileLink}
                     >
-                      📝 Cover Letter
+                       Cover Letter
                     </a>
                   )}
                 </div>

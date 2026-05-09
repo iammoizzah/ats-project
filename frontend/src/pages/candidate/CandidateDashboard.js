@@ -14,28 +14,28 @@ const CandidateDashboard = () => {
       <div style={styles.grid}>
         {[
           {
-            icon: '💼',
+            
             title: 'Browse Jobs',
             desc: 'Find and apply for open positions',
             link: '/jobs',
             color: '#e94560'
           },
           {
-            icon: '📋',
+            
             title: 'My Applications',
             desc: 'Track your application status',
             link: '/candidate/applications',
             color: '#1a1a2e'
           },
           {
-            icon: '📅',
+            
             title: 'My Interviews',
             desc: 'View scheduled interviews',
             link: '/candidate/interviews',
             color: '#0f3460'
           },
           {
-            icon: '👤',
+            
             title: 'My Profile',
             desc: 'Update your profile and resume',
             link: '/candidate/profile',

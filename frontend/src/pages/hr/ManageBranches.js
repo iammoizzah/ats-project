@@ -144,7 +144,7 @@ const ManageBranches = () => {
         <div style={styles.grid}>
           {branches.map(branch => (
             <div key={branch._id} style={styles.card}>
-              <div style={styles.cardIcon}>🏢</div>
+              <div style={styles.cardIcon}></div>
               <h3 style={styles.branchName}>{branch.name}</h3>
               <p style={styles.branchLocation}>📍 {branch.location}</p>
               {branch.description && (
@@ -155,13 +155,13 @@ const ManageBranches = () => {
                   style={styles.editBtn}
                   onClick={() => handleEdit(branch)}
                 >
-                  ✏️ Edit
+                   Edit
                 </button>
                 <button
                   style={styles.deleteBtn}
                   onClick={() => handleDelete(branch._id)}
                 >
-                  🗑️ Delete
+                   Delete
                 </button>
               </div>
             </div>

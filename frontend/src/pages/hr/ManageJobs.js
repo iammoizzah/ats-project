@@ -232,13 +232,13 @@ const ManageJobs = () => {
                   style={styles.editBtn}
                   onClick={() => handleEdit(job)}
                 >
-                  ✏️ Edit
+                   Edit
                 </button>
                 <button
                   style={styles.toggleBtn}
                   onClick={() => handleToggleActive(job)}
                 >
-                  {job.isActive ? '⏸ Deactivate' : '▶️ Activate'}
+                  {job.isActive ? '⏸ Deactivate' : '▶ Activate'}
                 </button>
                 <button
                   style={styles.deleteBtn}

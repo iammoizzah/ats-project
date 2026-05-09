@@ -34,7 +34,7 @@ const MyInterviews = () => {
 
       {interviews.length === 0 ? (
         <div style={styles.empty}>
-          <p style={styles.emptyIcon}>📅</p>
+          <p style={styles.emptyIcon}></p>
           <p style={styles.emptyText}>No interviews scheduled yet.</p>
           <p style={styles.emptyHint}>
             Keep applying! Interviews will appear here once scheduled by HR.
@@ -72,7 +72,7 @@ const MyInterviews = () => {
 
                   <div style={styles.infoRow}>
                     <span style={styles.infoItem}>
-                      🕐 {date.toLocaleTimeString([], {
+                       {date.toLocaleTimeString([], {
                         hour: '2-digit', minute: '2-digit'
                       })}
                     </span>

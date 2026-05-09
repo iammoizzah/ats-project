@@ -4,7 +4,7 @@ import API from '../../api/axios';
 import { toast } from 'react-toastify';
 
 const Profile = () => {
-  const { user, login } = useAuth();
+  const { user } = useAuth();
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [form, setForm] = useState({
@@ -142,7 +142,7 @@ const Profile = () => {
                 style={styles.fileInput}
               />
               {resumeFile && (
-                <p style={styles.fileName}>✅ {resumeFile.name}</p>
+                <p style={styles.fileName}> {resumeFile.name}</p>
               )}
               {user?.resumeUrl && !resumeFile && (
                 <a
@@ -151,7 +151,7 @@ const Profile = () => {
                   rel="noreferrer"
                   style={styles.existingFile}
                 >
-                  📄 View current resume
+                   View current resume
                 </a>
               )}
             </div>
@@ -165,7 +165,7 @@ const Profile = () => {
                 style={styles.fileInput}
               />
               {coverFile && (
-                <p style={styles.fileName}>✅ {coverFile.name}</p>
+                <p style={styles.fileName}> {coverFile.name}</p>
               )}
               {user?.coverLetterUrl && !coverFile && (
                 <a
@@ -174,7 +174,7 @@ const Profile = () => {
                   rel="noreferrer"
                   style={styles.existingFile}
                 >
-                  📝 View current cover letter
+                   View current cover letter
                 </a>
               )}
             </div>

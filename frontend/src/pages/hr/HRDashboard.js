@@ -7,35 +7,35 @@ const HRDashboard = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1 style={styles.title}>HR Dashboard 🏢</h1>
+        <h1 style={styles.title}>HR Dashboard </h1>
         <p style={styles.subtitle}>Welcome back, {user?.name}</p>
       </div>
 
       <div style={styles.grid}>
         {[
           {
-            icon: '💼',
+            
             title: 'Manage Jobs',
             desc: 'Post, edit and delete job listings',
             link: '/hr/jobs',
             color: '#e94560'
           },
           {
-            icon: '🏢',
+            
             title: 'Manage Branches',
             desc: 'Add and update branch locations',
             link: '/hr/branches',
             color: '#1a1a2e'
           },
           {
-            icon: '👥',
+           
             title: 'Applicants',
             desc: 'Review and manage all applicants',
             link: '/hr/applicants',
             color: '#0f3460'
           },
           {
-            icon: '📅',
+            
             title: 'Interviews',
             desc: 'Schedule and manage interviews',
             link: '/hr/interviews',
