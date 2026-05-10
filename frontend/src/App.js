@@ -24,6 +24,9 @@ import MyInterviews from './pages/candidate/MyInterviews';
 
 // HR
 import HRDashboard from './pages/hr/HRDashboard';
+import Applicants from './pages/hr/Applicants';
+import ManageBranches from './pages/hr/ManageBranches';
+import ManageJobs from './pages/hr/ManageJobs'; // ✅ ADDED
 
 function App() {
   return (
@@ -45,10 +48,10 @@ function App() {
             </ProtectedRoute>
           } />
           <Route path="/candidate/profile" element={
-  <ProtectedRoute roles={['candidate']}>
-    <Profile />
-  </ProtectedRoute>
-} />
+            <ProtectedRoute roles={['candidate']}>
+              <Profile />
+            </ProtectedRoute>
+          } />
           <Route path="/candidate/applications" element={
             <ProtectedRoute roles={['candidate']}>
               <MyApplications />
@@ -59,11 +62,6 @@ function App() {
               <MyInterviews />
             </ProtectedRoute>
           } />
-          <Route path="/hr/interviews" element={
-  <ProtectedRoute roles={['hr', 'admin']}>
-    <Interviews />
-  </ProtectedRoute>
-} />
 
           {/* HR */}
           <Route path="/hr/dashboard" element={
@@ -71,6 +69,27 @@ function App() {
               <HRDashboard />
             </ProtectedRoute>
           } />
+          <Route path="/hr/applicants" element={
+            <ProtectedRoute roles={['hr', 'admin']}>
+              <Applicants />
+            </ProtectedRoute>
+          } />
+          <Route path="/hr/interviews" element={
+            <ProtectedRoute roles={['hr', 'admin']}>
+              <Interviews />
+            </ProtectedRoute>
+          } />
+          <Route path="/hr/branches" element={
+            <ProtectedRoute roles={['hr', 'admin']}>
+              <ManageBranches />
+            </ProtectedRoute>
+          } />
+          <Route path="/hr/jobs" element={
+            <ProtectedRoute roles={['hr', 'admin']}>
+              <ManageJobs />
+            </ProtectedRoute>
+          } />
+
         </Routes>
 
         <ToastContainer position="top-right" autoClose={3000} />
@@ -79,4 +98,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; app.js

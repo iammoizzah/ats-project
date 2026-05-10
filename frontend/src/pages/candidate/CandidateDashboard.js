@@ -7,7 +7,7 @@ const CandidateDashboard = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1 style={styles.title}>Welcome, {user?.name} 👋</h1>
+        <h1 style={styles.title}>Welcome, {user?.name}</h1>
         <p style={styles.subtitle}>Manage your job applications from here</p>
       </div>
 
@@ -30,7 +30,7 @@ const CandidateDashboard = () => {
           {
             
             title: 'My Interviews',
-            desc: 'View scheduled interviews',
+            desc: 'View scheduled interviews and details',
             link: '/candidate/interviews',
             color: '#0f3460'
           },
