@@ -16,6 +16,7 @@ across multiple branches.
 - File Storage: Cloudinary
 - Email: Gmail SMTP (Nodemailer)
 
+
 ## Setup Instructions
 
 ### Backend
