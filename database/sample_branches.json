@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "branch_islamabad",
+    "name": "Islamabad",
+    "location": "Islamabad, Pakistan",
+    "description": "Head Office",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "branch_lahore",
+    "name": "Lahore",
+    "location": "Lahore, Punjab",
+    "description": "Main Lahore Office",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "branch_karachi",
+    "name": "Karachi",
+    "location": "Karachi, Pakistan",
+    "description": "South Office",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "branch_remote",
+    "name": "Remote",
+    "location": "Remote, Pakistan",
+    "description": "Remote Office",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  }
+]

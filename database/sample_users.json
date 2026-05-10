@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "user_hr_001",
+    "name": "Sara HR",
+    "email": "sara@test.com",
+    "password": "$2a$10$hashedpassword",
+    "role": "hr",
+    "phone": "",
+    "profilePicture": "",
+    "resumeUrl": "",
+    "coverLetterUrl": "",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "user_candidate_001",
+    "name": "Ali Hassan",
+    "email": "ali@test.com",
+    "password": "$2a$10$hashedpassword",
+    "role": "candidate",
+    "phone": "+92 300 1234567",
+    "profilePicture": "",
+    "resumeUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/resume.pdf",
+    "coverLetterUrl": "",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "user_candidate_002",
+    "name": "Fatima Khan",
+    "email": "fatima@test.com",
+    "password": "$2a$10$hashedpassword",
+    "role": "candidate",
+    "phone": "+92 301 9876543",
+    "profilePicture": "",
+    "resumeUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/resume2.pdf",
+    "coverLetterUrl": "",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  }
+]

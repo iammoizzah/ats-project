@@ -1,0 +1,63 @@
+
+[
+  {
+    "_id": "job_001",
+    "title": "React Developer",
+    "department": "Engineering",
+    "description": "Build and maintain React.js frontend applications.",
+    "requirements": "2+ years React experience. Strong CSS and JavaScript skills.",
+    "seats": 2,
+    "branch": "branch_lahore",
+    "postedBy": "user_hr_001",
+    "isActive": true,
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "job_002",
+    "title": "Node.js Backend Developer",
+    "department": "Engineering",
+    "description": "Build REST APIs using Node.js and Express with MongoDB.",
+    "requirements": "2+ years Node.js experience. MongoDB and REST API knowledge.",
+    "seats": 2,
+    "branch": "branch_islamabad",
+    "postedBy": "user_hr_001",
+    "isActive": true,
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "job_003",
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "description": "Design user interfaces for web and mobile applications.",
+    "requirements": "3+ years UI/UX experience. Proficient in Figma and Adobe XD.",
+    "seats": 1,
+    "branch": "branch_islamabad",
+    "postedBy": "user_hr_001",
+    "isActive": true,
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "job_004",
+    "title": "DevOps Engineer",
+    "department": "Infrastructure",
+    "description": "Manage cloud infrastructure and CI/CD pipelines.",
+    "requirements": "2+ years DevOps experience. AWS, Docker, Jenkins knowledge.",
+    "seats": 1,
+    "branch": "branch_karachi",
+    "postedBy": "user_hr_001",
+    "isActive": true,
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "job_005",
+    "title": "Remote Frontend Developer",
+    "department": "Engineering",
+    "description": "Work remotely building React frontends for international clients.",
+    "requirements": "2+ years React experience. Strong communication skills.",
+    "seats": 4,
+    "branch": "branch_remote",
+    "postedBy": "user_hr_001",
+    "isActive": true,
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  }
+]

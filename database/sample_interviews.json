@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "interview_001",
+    "application": "app_003",
+    "candidate": "user_candidate_001",
+    "job": "job_003",
+    "scheduledAt": "2026-05-15T10:00:00.000Z",
+    "message": "Please bring your portfolio. Interview will be conducted via Google Meet.",
+    "status": "Scheduled",
+    "createdAt": "2026-05-08T00:00:00.000Z"
+  }
+]

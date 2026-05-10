@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "app_001",
+    "job": "job_001",
+    "candidate": "user_candidate_001",
+    "resumeUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/resume_ali.pdf",
+    "coverLetterUrl": "",
+    "status": "Shortlisted",
+    "hrNotes": "Strong candidate, good React experience",
+    "createdAt": "2026-05-07T00:00:00.000Z"
+  },
+  {
+    "_id": "app_002",
+    "job": "job_002",
+    "candidate": "user_candidate_002",
+    "resumeUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/resume_fatima.pdf",
+    "coverLetterUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/cover_fatima.pdf",
+    "status": "Under Review",
+    "hrNotes": "",
+    "createdAt": "2026-05-07T00:00:00.000Z"
+  },
+  {
+    "_id": "app_003",
+    "job": "job_003",
+    "candidate": "user_candidate_001",
+    "resumeUrl": "https://res.cloudinary.com/dgag6ggjm/raw/upload/v1/ats/documents/resume_ali.pdf",
+    "coverLetterUrl": "",
+    "status": "Interview Scheduled",
+    "hrNotes": "Invited for design portfolio review",
+    "createdAt": "2026-05-07T00:00:00.000Z"
+  }
+]
