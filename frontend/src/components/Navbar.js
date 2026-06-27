@@ -54,7 +54,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1rem 2rem',
-    backgroundColor: '#1a1a2e',
+    backgroundColor: '#000001',
     color: 'white',
     position: 'sticky',
     top: 0,
@@ -100,4 +100,4 @@ const styles = {
   }
 };
 
-export default Navbar;
+export default Navbar; 

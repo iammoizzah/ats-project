@@ -27,8 +27,19 @@ import HRDashboard from './pages/hr/HRDashboard';
 import Applicants from './pages/hr/Applicants';
 import ManageBranches from './pages/hr/ManageBranches';
 import ManageJobs from './pages/hr/ManageJobs'; // ✅ ADDED
+import { useEffect } from 'react';
 
 function App() {
+let count=0;
+
+useEffect(() => {
+  console.log('sf');
+}, [count])
+
+  function funct(params) {
+    count++;
+  }
+
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -98,4 +109,5 @@ function App() {
   );
 }
 
-export default App; app.js
+export default App; 
+
